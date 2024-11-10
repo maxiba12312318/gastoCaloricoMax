@@ -1,0 +1,235 @@
+body{
+    background-color: #f4f4f9;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+header div{
+    justify-content: center;
+    display: flex;
+    height: auto;
+    width: 45%;
+}
+header div h1{
+    font-size: 20px;
+    line-height: 1.9;
+    color: #333;
+}
+img{
+    border-radius: 15px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h2 h2{
+    font-size: 30px;
+    text-decoration: underline;
+}
+.container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.hombre{
+    width: 35%;
+    height: 900px;
+    background-image: url(../imagenes/pexels-cottonbro-4761666.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-position: center;
+    border: solid 2px rgb(107, 107, 107);
+}
+.mujer{
+    width: 35%;
+    height: 900px;
+    background-image: url(../imagenes/pexels-cristian-rojas-8809985.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-position: center;
+    border: solid 2px rgb(107, 107, 107);
+}
+.container a{
+    padding: 11px;
+    justify-content: center;
+    display: flex;
+    font-size: 16px;
+    font-weight: 800;
+    margin-top: 8px;
+    color: white;
+    border: solid 3px white;
+    text-decoration: none;
+    background-color: black;
+    transition: all 0.9s ease;
+}
+.container a:hover{
+    transform: scale(1.1);
+    background-color: rgb(37, 37, 37);
+}
+                        /*            HOMBRE              */
+
+.contenedorHombre{ 
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contenedorH{
+    height: auto;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contenedorImg{
+
+    width: 22%;
+    height: 500px;
+}
+.contenedorImg img{
+    width: 100%;
+    height: 100%;
+}
+
+label{
+    font-size: 20px;
+    margin-right: 10px;
+}
+input{
+    border-radius: 6px;
+    padding: 6px;
+}
+.contenedorHombre form{
+    border: solid 2px black;
+    border-radius: 10px;
+    height: 70%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    background-color:  rgba(151, 177, 184, 0.425);
+}
+form div{
+    display: flex;
+    margin: 30px;
+    border: solid 1.5px rgb(63, 63, 63);
+    padding: 10px;
+    align-items: center;
+    border-radius: 13px;
+}
+
+.boton{ 
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+form div button{
+    border-radius: 13px;
+    width: 60%;
+    padding: 8px;
+    height: 100%;
+}
+.hombreh2{
+    border: solid 2px black;
+    height: 100px;
+    display: flex;
+    width: 100%;    
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(151, 177, 184, 0.425);
+}
+#resultado {
+    border: solid 2px black;
+    font-size: 1.5em; /* Incrementa el tamaño de la letra */
+    background-color: rgba(71, 165, 190, 0.425) ;
+    color: #333; /* Color del texto (gris oscuro) */
+    padding: 10px; /* Espaciado interno para que no quede pegado */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto */
+    margin-top: 20px; /* Espaciado superior */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            /*                      MEDIA QUERIS                            */
+@media (max-width: 1468px){
+
+    .contenedorImg{
+        display: none;
+    }
+    .hombre{
+        height: 700px;
+    }
+    .mujer{
+        height: 700px;
+    }
+    header img{
+        width: 70%;
+    }
+}
+@media (max-width: 1068px){
+    .contenedorH{
+        width: 70%;
+    }
+    .hombre{
+        height: 600px;
+    }
+    .mujer{
+        height: 600px;
+    }
+    header{
+        flex-direction: column;
+    }
+    header div{
+        width: 80%;
+    }
+}@media (max-width: 868px){
+    .contenedorH{
+        width: 100%;
+    }
+    .hombre{
+        height: 500px;
+    }
+    .mujer{
+        height: 500px;
+    }
+    header div h1{
+        font-size:16px ;
+    }
+}
+@media (max-width: 568px){
+   
+    .hombre{
+        height: 300px;
+    }
+    .mujer{
+        height: 300px;
+    }
+}
+

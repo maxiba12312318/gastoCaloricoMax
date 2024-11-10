@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G.C DIARIO HOMBRE</title>
+    <link rel="stylesheet" href="..//estilos/styles.css">
+
+</head>
+<body>
+    <main>
+        <div class="hombreh2"><h2>Calcula Tu Gasto Calorico Diario</h2></div>
+        <div class="contenedorHombre">
+            <div class="contenedorH">
+            
+               <form>
+                        <div>
+                    <label for="nombre">Nombre: </label>
+                    <input id="nombreHombre" type="text" placeholder="Ingrese su Nombre" required>
+                        </div>
+                        <div>
+                    <label for="peso">Peso: </label>
+                    <input id="pesoHombre" type="number" placeholder="Ingrese su Peso En KG" required>
+                        </div>
+                        <div>
+                    <label for="altura">Altura: </label>
+                    <input id="alturaHombre" type="number" placeholder="Ingrese su Altura En CM" required>
+                        </div>
+                        <div>   
+                    <label for="edad">Edad: </label>
+                    <input id="edadHombre" type="number" placeholder="Ingrese su Edad" required>
+                        </div>
+                        <div>
+                    <select id="nivelActividad" required>
+                      <option value="" disabled selected>Ingrese su Nivel Actividad</option>
+                      <option value="1.2">Sedentario(poco o ningun ejercicio)</option>
+                      <option value="1.375">Poco Activo(ejercicio ligero)</option>
+                      <option value="1.555">Moderadamente Activo(3-4 dias a la semana)</option>
+                      <option value="1.725">Muy activo(5-7 dias a la semana)</option>
+                    </select>
+                        </div>    
+                        <div class="boton">
+                    <button id="reiniciar " type="reset">Reiniciar</button>
+                    <button id="boton" type="submit">Calcular</button>
+                        </div>
+                  </form>
+                  <div id="resultado">Resultado</div>
+            </div>
+            <div class="contenedorImg">
+                <img src="..//imagenes/turco.jpg" alt="">
+            </div>
+        </div>
+    </main>
+    <script src="../javascript/script.js"></script>
+</body>
+</html>
