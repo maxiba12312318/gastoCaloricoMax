@@ -215,21 +215,30 @@ form div button{
     }
     .hombre{
         height: 500px;
+        width: 45%;
     }
     .mujer{
         height: 500px;
+        width: 45%;
     }
     header div h1{
         font-size:16px ;
     }
 }
 @media (max-width: 568px){
-   
     .hombre{
-        height: 300px;
+        height: 340px;
     }
     .mujer{
-        height: 300px;
+        height: 340px;
+    }
+}
+@media (max-width: 350px){
+    .hombre{
+        height: 200px;
+    }
+    .mujer{
+        height: 200px;
     }
 }
 
