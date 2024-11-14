@@ -162,8 +162,18 @@ form div button{
     text-align: center; /* Centra el texto */
     margin-top: 20px; /* Espaciado superior */
   }
-
-
+  #mostrarLista{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+  } 
+  #mostrarLista div{
+    border: solid 1px black;
+    padding: 10px;
+  }
+  .lista-item{
+   
+  }
 
 
 
